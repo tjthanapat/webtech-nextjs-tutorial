@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import FeatureCard from '../components/FeatureCard';
 
 export default function Home() {
@@ -16,12 +15,12 @@ export default function Home() {
           style={{ height: '80px' }}
         >
           <a href="#">
-            <Image src="/nextjs.svg" width={100} height={50} />
+            <img src="/nextjs.svg" width={100} height={50} />
           </a>
-          <a href="#" className="text-gray-500 hover:text-gray-700">
+          <a href="#whatis" className="text-gray-500 hover:text-gray-700">
             WHAT'S NEXT.JS
           </a>
-          <a href="#" className="text-gray-500 hover:text-gray-700">
+          <a href="#whosusing" className="text-gray-500 hover:text-gray-700">
             WHO'S USING NEXT.JS
           </a>
           <a href="#" className="nav-button">
@@ -33,7 +32,7 @@ export default function Home() {
         className="py-28 px-5 flex flex-col items-center justify-center"
         style={{ minHeight: 'calc(100vh - 81px)' }}
       >
-        <Image src="/nextjs.svg" width={250} height={125} />
+        <img src="/nextjs.svg" width={250} height={125} />
         <h2 class=" font-semibold text-4xl text-center ">
           The React Framework for Production
         </h2>
@@ -47,7 +46,7 @@ export default function Home() {
       </div>
       <div
         id="whatis"
-        className="min-h-screen max-w-screen-lg mx-auto p-5 pt-28"
+        className="max-w-screen-lg mx-auto p-5 pt-28"
       >
         <h1 className="text-center font-semibold text-3xl">Next.js คืออะไร</h1>
         <p className="mt-5">
@@ -58,14 +57,14 @@ export default function Home() {
         </p>
         <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           <FeatureCard
-            icon="not_interested"
+            icon="construction"
             title="Zero Config"
             description="มีการทำ Compilation และ Bundling ให้อัตโนมัติ และ optimize มาตั้งแต่เริ่ม"
           />
           <FeatureCard
             icon="computer"
             title="SSR (server-side rendering)"
-            description="Next.js มีลักษณะการทำงานเป็น SSR ทำให้ไม่ต้องกังวลเรื่องข้อจำกัดการทำ SEO"
+            description="มีลักษณะการทำงานเป็น SSR ทำให้ไม่ต้องกังวลเรื่องข้อจำกัดการทำ SEO"
           />
           <FeatureCard
             icon="account_tree"
@@ -88,6 +87,14 @@ export default function Home() {
             description="กำหนด style ให้กับ component ด้วย CSS Modules และยังรองรับ Built-in Sass"
           />
         </div>
+      </div>
+      <div
+        id="whosusing"
+        className="min-h-screen max-w-screen-lg mx-auto p-5 pt-28 " 
+      >
+        <h1 className="text-center font-semibold text-3xl">
+          เว็บที่ใช้ Next.js
+        </h1>
       </div>
     </>
   );

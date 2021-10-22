@@ -5,7 +5,7 @@ const FeatureCard = (props) => {
         {props.icon}
       </span>
       <h5 className="text-2xl font-medium">{props.title}</h5>
-      <p>{props.description}</p>
+      <p className="mt-2">{props.description}</p>
     </div>
   );
 };
