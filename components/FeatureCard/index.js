@@ -1,6 +1,6 @@
 const FeatureCard = (props) => {
   return (
-    <div className="border p-5 rounded-2xl hover:shadow-lg">
+    <div className="border p-5 rounded-2xl hover:shadow-2xl">
       <span className="material-icons" style={{ fontSize: '64px' }}>
         {props.icon}
       </span>
