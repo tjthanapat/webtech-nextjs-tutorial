@@ -34,8 +34,6 @@ const Showcase = () => {
       pagination={{
         clickable: true,
       }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         <WebSlide
