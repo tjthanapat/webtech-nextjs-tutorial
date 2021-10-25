@@ -85,7 +85,11 @@ export default function Lessons() {
           </a>{' '}
           บน web browser จะได้หน้าเว็บดังภาพด้านล่าง
         </p>
-        <img src="/lessons/lesson01_01.png" alt="หน้า next-tutorial เริ่มต้น" />
+        <img
+          src="/lessons/lesson01_01.png"
+          className="mx-auto mt-3 border"
+          alt="หน้า next-tutorial เริ่มต้น"
+        />
         <p className="pt-5">
           โครงสร้างไฟล์ใน <code>next-tutorial</code> จะได้ดังภาพด้านล่าง
         </p>
@@ -254,6 +258,66 @@ export default MyApp;
 `}
           </code>
         </pre>
+      </div>
+      <div id="lesson06" className="pt-20">
+        <h3 className="text-2xl font-medium">Deploy บน Vercel</h3>
+        <p className="mt-5">
+          หลังจากสร้าง Next.js ของเราและทำการแก้ไขเสร็จเรียบร้อยแล้ว ให้สร้าง
+          Git Repository ขั้นมาสำหรับแอพที่ได้สร้างไว้ และ push
+          โค้ดทั้งหมดขั้นไป
+        </p>
+        <p className="mt-5">
+          ไปที่{' '}
+          <a
+            href="https://nextjs.org/docs/getting-started"
+            target="_blank"
+            className="text-gray-400 hover:text-gray-700"
+          >
+            Vercel
+          </a>{' '}
+          และลงชื่อเข้าใช้งาน ไปที่หน้า Overview บน Vercel และกดปุ่ม{' '}
+          <i>New Project</i>
+        </p>
+        <img
+          src="/lessons/lesson06_01.png"
+          className="mx-auto mt-3 border"
+          alt="deploy-01"
+        />
+        <p className="mt-5">
+          เลือก Git Provider ที่ได้ทำการสร้าง repo เอาไว้
+          หากเป็นการเชื่อมบัญชีครั้งแรกจะมีการขอสิทธิ์การเข้าถึงของ Git Provider
+          นั้นๆ
+        </p>
+        <img
+          src="/lessons/lesson06_02.png"
+          className="mx-auto mt-3 border"
+          alt="deploy-02"
+        />
+        <p className="mt-5">กด import repo ที่ได้ทำการสร้างไว้ในขั้นตอนแรก</p>
+        <img
+          src="/lessons/lesson06_03.png"
+          className="mx-auto mt-3 border"
+          alt="deploy-03"
+        />
+        <p className="mt-5">
+          จะมีหน้าให้ขึ้น Create a Team กด Skip ข้ามไป และไปที่ส่วน Configure
+          Project ตั้งชื่อ project ใน Project Name (ชื่อที่ตั้งจะถูกนำไปเป็นชื่อ
+          domain ด้วย สามารถกลับมาเปลี่ยนใหม่ได้) และเลือก "Next.js" ใน
+          Framework Preset จากนั้นกด Deploy ได้เลย
+        </p>
+        <img
+          src="/lessons/lesson06_04.png"
+          className="mx-auto mt-3 border"
+          alt="deploy-04"
+        />
+        <p className="mt-5">
+          รอสักครู่ หากทุกอย่างเรียบร้อยและขึ้นหน้าดังภาพด้านล่าง ถือว่า deploy สำเร็จ
+        </p>
+        <img
+          src="/lessons/lesson06_05.png"
+          className="mx-auto mt-3 border"
+          alt="deploy-05"
+        />
       </div>
     </>
   );
