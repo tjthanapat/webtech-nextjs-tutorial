@@ -189,6 +189,11 @@ export default function About() {
             http://localhost:3000/about
           </a>{' '}
           จะได้หน้าเว็บตามรูปด้านล่าง
+          หากต้องการเพิ่มหน้าอีกให้ทำลักษณะเดียวกันคือ สร้างไฟล์ใน{' '}
+          <code>/pages</code> แล้ว Next.js จะทำ Route ให้ตามชื่อไฟล์ที่ตั้ง
+          ทั้งนี้สามารถสร้างโฟล์เดอร์ใน <code>/pages</code> และก็จะได้ Route ตาม
+          Directory เช่น มีไฟล์อยู่ที่ <code>/pages/folderName/mypage.js</code>
+          ก็จะได้ Route ที่ <code>/folderName/mypage</code>
         </p>
         <img
           src="/lessons/lesson04_01.png"
@@ -300,10 +305,10 @@ export default MyApp;
           alt="deploy-03"
         />
         <p className="mt-5">
-          จะมีหน้าให้ขึ้น Create a Team กด Skip ข้ามไป และไปที่ส่วน Configure
-          Project ตั้งชื่อ project ใน Project Name (ชื่อที่ตั้งจะถูกนำไปเป็นชื่อ
-          domain ด้วย สามารถกลับมาเปลี่ยนใหม่ได้) และเลือก "Next.js" ใน
-          Framework Preset จากนั้นกด Deploy ได้เลย
+          ในส่วนของ Create a Team กด Skip ข้ามไป และไปที่ส่วน Configure Project
+          ตั้งชื่อ project ใน Project Name (ชื่อที่ตั้งจะถูกนำไปเป็นชื่อ domain
+          ด้วย สามารถกลับมาเปลี่ยนใหม่ได้) และเลือก "Next.js" ใน Framework
+          Preset จากนั้นกด Deploy ได้เลย
         </p>
         <img
           src="/lessons/lesson06_04.png"
@@ -311,13 +316,24 @@ export default MyApp;
           alt="deploy-04"
         />
         <p className="mt-5">
-          รอสักครู่ หากทุกอย่างเรียบร้อยและขึ้นหน้าดังภาพด้านล่าง ถือว่า deploy สำเร็จ
+          รอสักครู่ หากทุกอย่างเรียบร้อยและขึ้นหน้าดังภาพด้านล่าง ถือว่า deploy
+          สำเร็จ
         </p>
         <img
           src="/lessons/lesson06_05.png"
           className="mx-auto mt-3 border"
           alt="deploy-05"
         />
+        <p className="mt-5">
+          หากต้องการศึกษาวิธีการ deploy บน node.js server{' '}
+          <a
+            href="https://nextjs.org/docs/deployment#other-hosting-options"
+            target="_blank"
+            className="text-gray-400 hover:text-gray-700"
+          >
+            ดูเพิ่มเติมได้ที่นี่
+          </a>
+        </p>
       </div>
     </>
   );
