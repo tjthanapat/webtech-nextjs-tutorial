@@ -116,7 +116,7 @@ export default function Home() {
         <h1 className="font-semibold text-3xl">สอนใช้ Next.js เบื้องต้น</h1>
         <p className="pt-5">
           เนื้อหาที่จะสอนใช้ Next.js ในครั้งนี้ จะประกอบไปด้วยการติดตั้ง
-          การใช้งานเบื้องต้น และการทำ Page Routing
+          การใช้งานเบื้องต้น การทำ Page Routing และการ Deploy บน Vercel
           สามารถอ่านเรื่องอื่นๆ เพิ่มเติมได้ที่{' '}
           <a
             href="https://nextjs.org/docs"
@@ -128,7 +128,10 @@ export default function Home() {
           ซึ่งเขียนไว้ได้อย่างละเอียดครบถ้วนและทำความเข้าใจได้ไม่ยากได้
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4">
-          <div className="pt-10 md:pt-28 md:sticky top-0" style={{maxHeight:'500px'}}>
+          <div
+            className="pt-10 md:pt-28 md:sticky top-0"
+            style={{ maxHeight: '500px' }}
+          >
             <ul className="flex flex-col gap-2">
               <li>
                 <a
@@ -167,7 +170,7 @@ export default function Home() {
                   href="#lesson04"
                   className="text-gray-500 hover:text-gray-700"
                 >
-                  {'>'} หน้าและการทำ Routing <br/>ระหว่างหน้า
+                  {'>'} หน้าและการทำ Routing
                 </a>
               </li>
               <li>
@@ -178,13 +181,79 @@ export default function Home() {
                   {'>'} เพิ่ม Stylesheet
                 </a>
               </li>
+              <li>
+                <a
+                  href="#lesson06"
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  {'>'} Deploy บน Vercel
+                </a>
+              </li>
             </ul>
           </div>
           <div className="col-span-3">
-            <Lessons/>
+            <Lessons />
           </div>
         </div>
+        <div className="text-center mt-10 mb-20">
+          <a
+            href="https://nextjs.org/docs"
+            target="_blank"
+            className="text-gray-400 hover:text-gray-700 text-xl"
+          >
+            ศึกษารายละเอียดเกี่ยวกับ Next.js เพิ่มเติม 🠒
+          </a>
+        </div>
       </div>
+      <footer className="border-t">
+        <div className="max-w-screen-lg mx-auto py-10 px-5 text-gray-500">
+          <p className="font-heading">ผู้จัดทำ: ธนภัทร ธีรรัตตัญญู</p>
+          <p className="font-heading">แก้ไขล่าสุดเมื่อ: 25 ตุลาคม 2021</p>
+          <p className="font-heading">แหล่งอ้างอิง:</p>
+          <div className="text-sm">
+            <ul>
+              <li>
+                <a
+                  href="https://nextjs.org/docs"
+                  target="_blank"
+                  className="text-gray-400 hover:text-gray-700"
+                >
+                  - Next.js Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://devahoy.com/blog/2020/03/getting-started-with-nextjs/"
+                  target="_blank"
+                  className="text-gray-400 hover:text-gray-700"
+                >
+                  - บทความ "Next.js คืออะไร? มาเริ่มเขียนเว็บด้วย Next.js
+                  กันดีกว่า" โดย Chai Phonbopit
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://littleboycoding.github.io/article/next-js"
+                  target="_blank"
+                  className="text-gray-400 hover:text-gray-700"
+                >
+                  - บทความ "Next.js คืออะไร ควรใช้มันจริงหรือ ? 🤔" โดย Thanawat
+                  Yodnil
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="text-center mt-5 ">
+            <a
+              href="https://github.com/TJTHANAPAT/webtech-nextjs-tutorial"
+              target="_blank"
+              className="text-gray-500 hover:text-gray-700"
+            >
+              View Code on GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

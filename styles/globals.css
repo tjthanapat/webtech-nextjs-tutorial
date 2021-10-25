@@ -21,6 +21,9 @@ p {
 .font-texting {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
+.font-heading {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
 html {
   scroll-behavior: smooth;
 }
