@@ -207,7 +207,7 @@ export default function Home() {
       </div>
       <footer className="border-t">
         <div className="max-w-screen-lg mx-auto py-10 px-5 text-gray-500">
-          <p className="font-heading">ผู้จัดทำ: ธนภัทร ธีรรัตตัญญู</p>
+          <p className="font-heading">ผู้จัดทำ: ธนภัทร ธีรรัตตัญญู 63070227</p>
           <p className="font-heading">แก้ไขล่าสุดเมื่อ: 25 ตุลาคม 2021</p>
           <p className="font-heading">แหล่งอ้างอิง:</p>
           <div className="text-sm">
